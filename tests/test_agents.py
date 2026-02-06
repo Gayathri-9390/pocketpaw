@@ -400,6 +400,9 @@ class TestPocketPawNative:
         assert "shell" in tool_names
         assert "read_file" in tool_names
         assert "write_file" in tool_names
+        # Memory tools added 2026-02-05
+        assert "remember" in tool_names
+        assert "recall" in tool_names
 
     def test_security_validate_command(self):
         """Should validate commands for dangerous patterns."""
