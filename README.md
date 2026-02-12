@@ -26,7 +26,7 @@
   No subscription. No cloud lock-in. Just you and your Paw.
 </p>
 
-> **🚧 Beta:** This project is under active development. Expect breaking changes between versions.
+> **Beta:** This project is under active development. Expect breaking changes between versions.
 
 <p align="center">
   <video src="https://github.com/pocketpaw/pocketpaw/raw/main/paw-intro-4.mp4" width="700" controls></video>
@@ -48,7 +48,7 @@ pip install pocketpaw && pocketpaw
 
 **That's it.** One command. 30 seconds. Your own AI agent.
 
-I'm your self-hosted, cross-platform personal AI agent. The **web dashboard** opens automatically — talk to me right in your browser, or connect me to **Discord**, **Slack**, **WhatsApp**, or **Telegram** and control me from anywhere. I run on _your_ machine, respect _your_ privacy, and I'm always here.
+I'm your self-hosted, cross-platform personal AI agent. The web dashboard opens automatically. Talk to me right in your browser, or connect me to Discord, Slack, WhatsApp, or Telegram and control me from anywhere. I run on _your_ machine, respect _your_ privacy, and I'm always here.
 
 **No subscription. No cloud lock-in. Just you and me.**
 
@@ -80,32 +80,32 @@ Telegram · Discord · Slack · WhatsApp · Web Dashboard
 
 ## What Can PocketPaw Do?
 
-| Feature                   | Description                                                                                  |
-| ------------------------- | -------------------------------------------------------------------------------------------- |
-| **Web Dashboard**         | Browser-based control panel — the default mode, no setup needed                              |
-| **Multi-Channel**         | Discord, Slack, WhatsApp (Personal + Business), Signal, Matrix, Teams, Google Chat, Telegram |
-| **Claude Agent SDK**      | Default backend — official Claude SDK with built-in tools (Bash, Read, Write)                |
-| **Smart Model Router**    | Auto-selects Haiku / Sonnet / Opus based on task complexity                                  |
-| **Tool Policy**           | Fine-grained allow/deny control over which tools the agent can use                           |
-| **Plan Mode**             | Require approval before the agent runs shell commands or edits files                         |
-| **Browser Control**       | Browse the web, fill forms, click buttons via accessibility tree                             |
-| **Gmail Integration**     | Search, read, and send emails via OAuth (no app passwords)                                   |
-| **Calendar Integration**  | List events, create meetings, meeting prep briefings                                         |
-| **Google Drive & Docs**   | List, download, upload, share files; read and create documents                               |
-| **Web Search & Research** | Tavily/Brave search + multi-step research with source synthesis                              |
-| **Image Generation**      | Google Gemini image generation, saved locally                                                |
-| **Voice / TTS / STT**     | Text-to-speech via OpenAI or ElevenLabs, speech-to-text via Whisper                          |
-| **Spotify**               | Search tracks, playback control, playlist management                                         |
-| **Reddit**                | Search posts, read threads, browse trending topics                                           |
-| **OCR**                   | Extract text from images via GPT-4o vision or pytesseract                                    |
-| **Memory & Compaction**   | Long-term facts + session history with smart compaction + Mem0 semantic search               |
-| **MCP Support**           | Connect Model Context Protocol servers (stdio + HTTP)                                        |
-| **Cron Scheduler**        | Recurring reminders with natural language time parsing                                       |
-| **Security Suite**        | Injection scanner, audit CLI, Guardian AI, self-audit daemon                                 |
-| **Local-First**           | Runs on YOUR machine — your data never leaves your computer                                  |
-| **Cross-Platform**        | macOS, Windows, Linux                                                                        |
-| **Skill System**          | Create reusable agent skills at runtime                                                      |
-| **Task Delegation**       | Delegate complex sub-tasks to Claude Code CLI                                                |
+| Feature | Description |
+| --- | --- |
+| **Web Dashboard** | Browser-based control panel, the default mode. No setup needed. |
+| **Multi-Channel** | Discord, Slack, WhatsApp (Personal + Business), Signal, Matrix, Teams, Google Chat, Telegram |
+| **Claude Agent SDK** | Default backend. Official Claude SDK with built-in tools (Bash, Read, Write). |
+| **Smart Model Router** | Auto-selects Haiku / Sonnet / Opus based on task complexity |
+| **Tool Policy** | Allow/deny control over which tools the agent can use |
+| **Plan Mode** | Require approval before the agent runs shell commands or edits files |
+| **Browser Control** | Browse the web, fill forms, click buttons via accessibility tree |
+| **Gmail Integration** | Search, read, and send emails via OAuth (no app passwords) |
+| **Calendar Integration** | List events, create meetings, meeting prep briefings |
+| **Google Drive & Docs** | List, download, upload, share files; read and create documents |
+| **Web Search & Research** | Tavily/Brave search + multi-step research with source synthesis |
+| **Image Generation** | Google Gemini image generation, saved locally |
+| **Voice / TTS / STT** | Text-to-speech via OpenAI or ElevenLabs, speech-to-text via Whisper |
+| **Spotify** | Search tracks, playback control, playlist management |
+| **Reddit** | Search posts, read threads, browse trending topics |
+| **OCR** | Extract text from images via GPT-4o vision or pytesseract |
+| **Memory & Compaction** | Long-term facts + session history with smart compaction + Mem0 semantic search |
+| **MCP Support** | Connect Model Context Protocol servers (stdio + HTTP) |
+| **Cron Scheduler** | Recurring reminders with natural language time parsing |
+| **Security Suite** | Injection scanner, audit CLI, Guardian AI, self-audit daemon |
+| **Local-First** | Runs on YOUR machine. Your data never leaves your computer. |
+| **Cross-Platform** | macOS, Windows, Linux |
+| **Skill System** | Create reusable agent skills at runtime |
+| **Task Delegation** | Delegate complex sub-tasks to Claude Code CLI |
 
 ### Examples
 
@@ -114,7 +114,7 @@ You:  "Every Sunday evening, remind me which recycling bins to put out"
 Paw:  *creates a recurring schedule*
 Paw:  "Done. I'll check the recycling calendar and message you every Sunday at 6pm."
 
-You:  "Organize my Downloads folder — PDFs by date, images by type, delete duplicates"
+You:  "Organize my Downloads folder. PDFs by date, images by type, delete duplicates"
 Paw:  *scans filesystem, moves 47 files, removes 12 duplicates*
 Paw:  "All clean. Here's what I did: [summary]"
 ```
@@ -130,7 +130,7 @@ Paw:  "Here's a summary with 3 key takeaways. Want me to save this to memory?"
 ### Coding & DevOps
 
 ```
-You:  "Find that memory leak — the app crashes after 2 hours"
+You:  "Find that memory leak, the app crashes after 2 hours"
 Paw:  *reads logs, profiles code, identifies the issue*
 Paw:  "Found it. The WebSocket handler never closes connections. Here's the fix."
 ```
@@ -149,16 +149,16 @@ Paw:  "3 agents working on it. Agent A is scraping competitor sites,
 
 ## Web Dashboard
 
-The browser-based dashboard is the default mode — just run `pocketpaw` and it opens at `http://localhost:8888`.
+The browser-based dashboard is the default mode. Run `pocketpaw` and it opens at `http://localhost:8888`.
 
-**What you get:**
+What you get:
 
 - Real-time streaming chat via WebSocket
-- Session management — create, switch, search, and resume conversations
+- Session management: create, switch, search, and resume conversations
 - Activity panel showing tool calls, thinking, and system events
 - Settings panel for LLM, backend, and tool policy configuration
-- **Channel management** — configure, start, and stop adapters from the sidebar
-- **MCP server management** — add, configure, and monitor MCP servers
+- Channel management: configure, start, and stop adapters from the sidebar
+- MCP server management: add, configure, and monitor MCP servers
 - Plan Mode approval modal for reviewing tool calls before execution
 
 ### Channel Management
@@ -183,9 +183,9 @@ See [Channel Adapters documentation](documentation/features/channels.md) for ful
 
 ---
 
-## Browser Superpowers
+## Browser
 
-I use your existing Chrome if you have it — no extra downloads. If you don't have Chrome, I'll download a small browser automatically on first use.
+Uses your existing Chrome if you have it. No extra downloads. If you don't have Chrome, a small browser is downloaded automatically on first use.
 
 ---
 
@@ -268,7 +268,7 @@ Custom orchestrator: Anthropic SDK for reasoning + Open Interpreter for code exe
 
 Standalone Open Interpreter supporting Ollama, OpenAI, or Anthropic as the LLM provider. Good for fully local setups with Ollama.
 
-Switch anytime in settings or config!
+Switch anytime in settings or config.
 
 ---
 
@@ -278,8 +278,8 @@ Switch anytime in settings or config!
 
 Stores memories as readable markdown in `~/.pocketclaw/memory/`:
 
-- `MEMORY.md` — Long-term facts about you
-- `sessions/` — Conversation history with smart compaction
+- `MEMORY.md`: Long-term facts about you
+- `sessions/`: Conversation history with smart compaction
 
 ### Session Compaction
 
@@ -290,7 +290,7 @@ Long conversations are automatically compacted to stay within budget:
 
 ### USER.md Profile
 
-PocketPaw creates identity files at `~/.pocketclaw/identity/` including `USER.md` — a profile loaded into every conversation so the agent knows your preferences.
+PocketPaw creates identity files at `~/.pocketclaw/identity/` including `USER.md`, a profile loaded into every conversation so the agent knows your preferences.
 
 ### Optional: Mem0 (Semantic Memory)
 
@@ -306,7 +306,7 @@ See [Memory documentation](documentation/features/memory.md) for details.
 
 ## Configuration
 
-Config lives in `~/.pocketclaw/config.json`. API keys and tokens are **automatically encrypted** in `secrets.enc` — never stored as plain text.
+Config lives in `~/.pocketclaw/config.json`. API keys and tokens are automatically encrypted in `secrets.enc`, never stored as plain text.
 
 ```json
 {
@@ -349,18 +349,16 @@ See the [full configuration reference](documentation/features/) for all availabl
 
 ## Security
 
-PocketPaw takes your safety seriously:
-
-- **Guardian AI** — Secondary LLM safety check before running dangerous commands
-- **Injection Scanner** — Two-tier detection (regex heuristics + optional LLM deep scan) blocks prompt injection attacks
-- **Tool Policy** — Restrict agent tool access with profiles (`minimal`, `coding`, `full`) and allow/deny lists
-- **Plan Mode** — Require human approval before executing shell commands or file edits
-- **Security Audit CLI** — Run `pocketpaw --security-audit` to check 7 security aspects (config permissions, API key exposure, audit log, etc.)
-- **Self-Audit Daemon** — Daily automated health checks (12 checks) with JSON reports at `~/.pocketclaw/audit_reports/`
-- **Audit Logging** — Append-only log at `~/.pocketclaw/audit.jsonl`
-- **Single User Lock** — Only authorized users can control the agent
-- **File Jail** — Operations restricted to allowed directories
-- **Local LLM Option** — Use Ollama and never phone home
+- **Guardian AI.** A secondary LLM reviews every shell command before execution and decides if it's safe.
+- **Injection Scanner.** Two-tier detection (regex heuristics + optional LLM deep scan) blocks prompt injection attacks.
+- **Tool Policy.** Restrict agent tool access with profiles (`minimal`, `coding`, `full`) and allow/deny lists.
+- **Plan Mode.** Require human approval before executing shell commands or file edits.
+- **Security Audit CLI.** Run `pocketpaw --security-audit` to check 7 aspects (config permissions, API key exposure, audit log, etc.).
+- **Self-Audit Daemon.** Daily automated health checks (12 checks) with JSON reports at `~/.pocketclaw/audit_reports/`.
+- **Audit Logging.** Append-only log at `~/.pocketclaw/audit.jsonl`.
+- **Single User Lock.** Only authorized users can control the agent.
+- **File Jail.** Operations restricted to allowed directories.
+- **Local LLM Option.** Use Ollama and nothing phones home.
 
 See [Security documentation](documentation/features/security.md) for details.
 
@@ -407,16 +405,16 @@ pip install pocketpaw[all]                 # Everything
 
 Full documentation lives in [`documentation/`](documentation/README.md):
 
-- [Channel Adapters](documentation/features/channels.md) — Discord, Slack, WhatsApp, Telegram setup
-- [Tool Policy](documentation/features/tool-policy.md) — Profiles, groups, allow/deny
-- [Web Dashboard](documentation/features/web-dashboard.md) — Browser UI overview
-- [Security](documentation/features/security.md) — Injection scanner, audit CLI, audit logging
-- [Model Router](documentation/features/model-router.md) — Smart complexity-based model selection
-- [Plan Mode](documentation/features/plan-mode.md) — Approval workflow for tool execution
-- [Integrations](documentation/features/integrations.md) — OAuth, Gmail, Calendar, Drive, Docs, Spotify
-- [Tools](documentation/features/tools.md) — Web search, research, image gen, voice, delegation, skills
-- [Memory](documentation/features/memory.md) — Session compaction, USER.md profile, Mem0
-- [Scheduler](documentation/features/scheduler.md) — Cron scheduler, self-audit daemon
+- [Channel Adapters](documentation/features/channels.md): Discord, Slack, WhatsApp, Telegram setup
+- [Tool Policy](documentation/features/tool-policy.md): Profiles, groups, allow/deny
+- [Web Dashboard](documentation/features/web-dashboard.md): Browser UI overview
+- [Security](documentation/features/security.md): Injection scanner, audit CLI, audit logging
+- [Model Router](documentation/features/model-router.md): Smart complexity-based model selection
+- [Plan Mode](documentation/features/plan-mode.md): Approval workflow for tool execution
+- [Integrations](documentation/features/integrations.md): OAuth, Gmail, Calendar, Drive, Docs, Spotify
+- [Tools](documentation/features/tools.md): Web search, research, image gen, voice, delegation, skills
+- [Memory](documentation/features/memory.md): Session compaction, USER.md profile, Mem0
+- [Scheduler](documentation/features/scheduler.md): Cron scheduler, self-audit daemon
 
 ---
 
@@ -429,7 +427,7 @@ Full documentation lives in [`documentation/`](documentation/README.md):
 - Discord: Coming Soon
 - Email: pocketpawai@gmail.com
 
-PRs welcome. Let's build the future of personal AI together.
+PRs welcome. Come build with us.
 
 ---
 
