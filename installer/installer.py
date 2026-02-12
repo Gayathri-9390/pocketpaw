@@ -164,7 +164,7 @@ FEATURE_GROUPS: dict[str, list[tuple[str, str]]] = {
         ("browser", "Browser Automation (Playwright)"),
         ("memory", "Semantic Memory (mem0)"),
         ("desktop", "Desktop Control"),
-        ("native", "Open Interpreter Backend"),
+        ("native", "Open Interpreter Backend (Experimental)"),
     ],
     "Channels": [
         ("telegram", "Telegram"),
@@ -180,14 +180,14 @@ FEATURE_GROUPS: dict[str, list[tuple[str, str]]] = {
         ("extract", "URL Extraction"),
         ("voice", "Voice/TTS"),
         ("ocr", "OCR"),
-        ("mcp", "MCP Protocol"),
+        ("mcp", "MCP Protocol (Beta)"),
     ],
 }
 
 BACKENDS = {
     "claude_agent_sdk": "Claude Agent SDK (recommended)",
     "pocketpaw_native": "PocketPaw Native (Anthropic + Open Interpreter)",
-    "open_interpreter": "Open Interpreter (Ollama/OpenAI/Anthropic)",
+    "open_interpreter": "Open Interpreter (Experimental — Ollama/OpenAI/Anthropic)",
 }
 
 LLM_PROVIDERS = {

@@ -61,7 +61,7 @@ class Settings(BaseSettings):
     # Agent Backend
     agent_backend: str = Field(
         default="claude_agent_sdk",
-        description="Agent backend: 'claude_agent_sdk' (recommended), 'pocketpaw_native', or 'open_interpreter'",
+        description="Agent backend: 'claude_agent_sdk' (recommended), 'pocketpaw_native', or 'open_interpreter' (experimental)",
     )
 
     # LLM Configuration

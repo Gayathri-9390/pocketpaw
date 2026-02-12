@@ -155,6 +155,7 @@
         </button>
         <button class="flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs text-white/60 hover:text-white hover:bg-white/5 transition-colors" @click="openMCP(); sidebarOpen = false">
           <i data-lucide="plug" class="w-3.5 h-3.5"></i> MCP
+          <span class="text-[8px] font-bold uppercase tracking-wider text-amber-400/70">Beta</span>
           <span x-show="connectedMCPCount() > 0" class="ml-auto text-[10px] bg-accent/20 text-accent px-1.5 rounded-full" x-text="connectedMCPCount()"></span>
         </button>
         <button class="flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs text-white/60 hover:text-white hover:bg-white/5 transition-colors" @click="openSettings(); sidebarOpen = false">
